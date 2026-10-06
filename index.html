@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="STIRLAX MODZ web control panel">
+  <title>STIRLAX MODZ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <main class="app-shell">
+    <section id="loginView" class="view login-view">
+      <div class="brand">
+        <div class="logo-wrap"><img src="assets/logo.png" alt="STIRLAX MODZ logo"></div>
+        <h1>STIRLAX <span>MODZ</span></h1>
+        <p>Premium control panel</p>
+      </div>
+
+      <form id="loginForm" class="card login-card">
+        <div class="card-head">
+          <span class="eyebrow">ACCESS</span>
+          <h2>Enter your key</h2>
+          <p>Paste your STIRLAX activation key to continue.</p>
+        </div>
+
+        <label for="keyInput">Password</label>
+        <input id="keyInput" name="key" type="password" autocomplete="current-password"
+               placeholder="Enter password" required>
+        <button class="primary" type="submit">VALIDATE KEY</button>
+
+        <button id="freeKeyBtn" class="secondary" type="button">GET KEY GRATIS</button>
+        <p id="loginStatus" class="status"></p>
+      </form>
+
+      <p class="footer-note">STIRLAX MODZ • Web Edition</p>
+    </section>
+
+    <section id="panelView" class="view panel-view hidden">
+      <header class="topbar">
+        <div class="mini-brand">
+          <img src="assets/logo.png" alt="">
+          <div>
+            <strong>STIRLAX MODZ</strong>
+            <small>CONTROL PANEL</small>
+          </div>
+        </div>
+        <button id="logoutBtn" class="icon-btn" type="button" aria-label="Log out">↪</button>
+      </header>
+
+      <div class="hero">
+        <div>
+          <span class="eyebrow">PREMIUM CONTROL PANEL</span>
+          <h2>STIRLAX ONLINE</h2>
+          <p>Manage your engine and access resources from one place.</p>
+        </div>
+        <div id="onlineBadge" class="badge"><i></i> ONLINE</div>
+      </div>
+
+      <div class="grid">
+        <article class="card status-card">
+          <div class="card-head compact">
+            <span class="eyebrow">ACTIVATION STATUS</span>
+            <h3>Account access</h3>
+          </div>
+          <div class="status-row">
+            <div class="pulse"></div>
+            <div>
+              <strong id="activationText">ACTIVE</strong>
+              <span id="activationKey">Key validated</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card engine-card">
+          <div class="card-head compact">
+            <span class="eyebrow">ENGINE CONTROL</span>
+            <h3>Proxy Engine</h3>
+          </div>
+          <div class="engine-state">
+            <span id="engineDot" class="engine-dot"></span>
+            <strong id="engineText">STOPPED</strong>
+          </div>
+          <div class="engine-actions">
+            <button id="startBtn" class="primary" type="button">START</button>
+            <button id="stopBtn" class="secondary" type="button">STOP</button>
+          </div>
+          <div id="engineMessage" class="status"></div>
+        </article>
+
+        <article class="card resource-card">
+          <div class="card-head compact">
+            <span class="eyebrow">STIRLAX RESOURCES</span>
+            <h3>Quick access</h3>
+          </div>
+          <div class="resource-list">
+            <a href="https://www.facebook.com/share/18KzXN8HCm/" target="_blank" rel="noopener">
+              <span>f</span> Follow on Facebook <b>↗</b>
+            </a>
+            <a href="https://www.tiktok.com/@ffidsaler1587?_r=1&_t=ZS-9AK3yEhJrcr" target="_blank" rel="noopener">
+              <span>♪</span> Follow on TikTok <b>↗</b>
+            </a>
+            <a href="https://wa.me/8801344839207" target="_blank" rel="noopener">
+              <span>WA</span> WhatsApp Help Line <b>↗</b>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <footer class="panel-footer">
+        <span>STIRLAX MODZ WEB</span>
+        <span>v1.0</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
